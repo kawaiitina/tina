@@ -12,7 +12,7 @@
     :min="-10000"
     :step="0.01"
     label="input"
-    thumb-label        
+    thumb-label
     ></v-slider>
   </v-card>
 </template>
@@ -20,28 +20,28 @@
 <script>
 export default {
   name: 'Counter',
-  data(){
-      return{
-          count: 0,
-          input: 0,
-          text: ''
-      }
+  data() {
+    return {
+      count: 0,
+      input: 0,
+      text: '',
+    };
   },
-  methods:{
-      add(input){
-          this.count += input;
-      },
-      subtract(input){
-          this.count -= input;
-      },
-      multiply(input){
-          this.count *= input;
-      },
-      divide(input){
-          this.count /= input;
-      }
-  }
-}
+  methods: {
+    add(input) {
+      this.count += input;
+    },
+    subtract(input) {
+      this.count -= input;
+    },
+    multiply(input) {
+      this.count *= input;
+    },
+    divide(input) {
+      this.count /= input;
+    },
+  },
+};
 </script>
 
 <style scoped>

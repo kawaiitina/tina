@@ -72,29 +72,33 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-import Counter from './components/Counter';
-import Todo from './components/Todo'
+import HelloWorld from './components/HelloWorld.vue';
+import Counter from './components/Counter.vue';
+import Todo from './components/Todo.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld, Counter, Todo
+    HelloWorld,
+    Counter,
+    Todo,
   },
-  data () {
+  data() {
     return {
       clipped: false,
       drawer: true,
       fixed: false,
-      items: [{
-        icon: 'bubble_chart',
-        title: 'Inspire'
-      }],
+      items: [
+        {
+          icon: 'bubble_chart',
+          title: 'Inspire',
+        },
+      ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
-    }
-  }
-}
+      title: 'Vuetify.js',
+    };
+  },
+};
 </script>
